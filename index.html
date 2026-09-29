@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse — train smarter, not longer</title>
+    <meta name="description" content="A personal coach in your pocket: adaptive plans, live heart-rate zones and progress you can feel." />
+    <meta name="theme-color" content="#f3f2ee" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#top" class="logo" aria-label="Pulse">
+        <svg viewBox="0 0 40 24" width="34" height="20" aria-hidden="true"><path d="M1 13h9l3-8 6 16 4-11 3 3h13" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        PULSE
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#story" data-i18n="nav.app">The app</a>
+        <a href="#plan" data-i18n="nav.plan">Your plan</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header__right">
+        <div class="lang" role="group" aria-label="Language"><button data-lang-btn="ru">RU</button><button data-lang-btn="en">EN</button></div>
+        <a href="#get" class="btn btn--dark btn--sm" data-i18n="cta.get">Get the app</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="kicker"><span class="kicker__dot"></span><span data-i18n="hero.kicker">Your personal coach, in your pocket</span></p>
+          <h1 class="hero__title">
+            <span class="hl" data-i18n="hero.l1">Train</span>
+            <span class="hl hl--accent" data-i18n="hero.l2">smarter,</span>
+            <span class="hl" data-i18n="hero.l3">not longer</span>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">Pulse builds a plan around your goal, your schedule and your heart rate — then adapts every week as you get stronger.</p>
+          <div class="stores" id="get">
+            <a href="#pricing" class="store"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.7ZM14.2 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z" /></svg><span><small data-i18n="store.apple">Download on the</small>App Store</span></a>
+            <a href="#pricing" class="store"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#34d399" d="M3.6 2.3 13.4 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Z" /><path fill="#60a5fa" d="m16.8 8.6-3.4 3.4-9.8-9.7c.1-.1.3-.1.5-.1.3 0 .5.1.8.2l11.9 6.2Z" /><path fill="#f87171" d="m16.8 15.4-11.9 6.2c-.3.1-.5.2-.8.2-.2 0-.4 0-.5-.1l9.8-9.7 3.4 3.4Z" /><path fill="#fbbf24" d="M20.4 12c0 .6-.3 1.1-.8 1.4l-2.8 2-3.4-3.4 3.4-3.4 2.8 2c.5.3.8.8.8 1.4Z" /></svg><span><small data-i18n="store.google">Get it on</small>Google Play</span></a>
+          </div>
+          <p class="hero__rating"><span class="stars" aria-hidden="true">★★★★★</span> <strong>4.9</strong> <span data-i18n="hero.rating">· 120k ratings · Editors' Choice</span></p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="blob" aria-hidden="true"></div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone__screen screen-home">
+              <div class="notch"></div>
+              <p class="ui-hello" data-i18n="ui.hello">Good morning, Alex</p>
+              <h3 class="ui-h" data-i18n="ui.today">Today</h3>
+              <div class="rings">
+                <svg viewBox="0 0 120 120">
+                  <circle class="ring-bg" cx="60" cy="60" r="52" /><circle pathLength="1" class="ring ring--move" cx="60" cy="60" r="52" style="--p: .78" />
+                  <circle class="ring-bg" cx="60" cy="60" r="40" /><circle pathLength="1" class="ring ring--exercise" cx="60" cy="60" r="40" style="--p: .62" />
+                  <circle class="ring-bg" cx="60" cy="60" r="28" /><circle pathLength="1" class="ring ring--stand" cx="60" cy="60" r="28" style="--p: .9" />
+                </svg>
+                <ul class="rings__legend">
+                  <li><i class="dot dot--move"></i><b>612</b> <span data-i18n="ui.kcal">kcal</span></li>
+                  <li><i class="dot dot--exercise"></i><b>37</b> <span data-i18n="ui.min">min</span></li>
+                  <li><i class="dot dot--stand"></i><b>9 214</b> <span data-i18n="ui.steps">steps</span></li>
+                </ul>
+              </div>
+              <div class="ui-card">
+                <span class="ui-tag" data-i18n="ui.next">Next up · 18:30</span>
+                <strong data-i18n="ui.workout">Upper body power</strong>
+                <span class="ui-meta" data-i18n="ui.workoutMeta">42 min · 8 exercises · Zone 3</span>
+                <span class="ui-play">▶</span>
+              </div>
+              <p class="ui-meta ui-week-title" data-i18n="ui.week">This week</p>
+              <div class="ui-week"><i style="--h: 60%"></i><i style="--h: 85%"></i><i style="--h: 20%"></i><i style="--h: 95%" class="is-today"></i><i style="--h: 8%"></i><i style="--h: 8%"></i><i style="--h: 8%"></i></div>
+            </div>
+          </div>
+          <div class="widget widget--hr" aria-hidden="true">
+            <span class="widget__label">❤ <span data-i18n="w.hr">Heart rate</span></span>
+            <strong><span class="bpm">128</span> <small>bpm</small></strong>
+            <svg viewBox="0 0 120 30" class="ecg"><path d="M0 16h20l4-10 5 20 5-14 3 4h16l4-10 5 20 5-14 3 4h16l4-10 5 20 5-14 3 4h12" /></svg>
+          </div>
+          <div class="widget widget--streak" aria-hidden="true">🔥 <strong>12</strong> <span data-i18n="w.streak">day streak</span></div>
+          <div class="widget widget--badge" aria-hidden="true">🏅 <span data-i18n="w.badge">New record: 5 km in 24:10</span></div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true"><div class="ticker__track" data-i18n="ticker"><span>Running</span><i>✦</i><span>Strength</span><i>✦</i><span>Yoga</span><i>✦</i><span>HIIT</span><i>✦</i><span>Cycling</span><i>✦</i><span>Swimming</span><i>✦</i><span>Mobility</span><i>✦</i><span>Running</span><i>✦</i><span>Strength</span><i>✦</i><span>Yoga</span><i>✦</i><span>HIIT</span><i>✦</i><span>Cycling</span><i>✦</i><span>Swimming</span><i>✦</i><span>Mobility</span><i>✦</i></div></div>
+
+      <!-- Story -->
+      <section class="story" id="story">
+        <div class="story__phone-col">
+          <div class="phone phone--story" aria-hidden="true">
+            <div class="notch"></div>
+            <!-- Plan -->
+            <div class="phone__screen story-screen is-active" data-screen="0">
+              <h3 class="ui-h" data-i18n="s0.h">This week</h3>
+              <ul class="week">
+                <li class="is-done"><b data-i18n="d.mo">Mo</b><span data-i18n="s0.w1">Run · 5 km</span><i>✓</i></li>
+                <li class="is-done"><b data-i18n="d.tu">Tu</b><span data-i18n="s0.w2">Strength</span><i>✓</i></li>
+                <li><b data-i18n="d.we">We</b><span data-i18n="s0.w3">Rest &amp; mobility</span><i>○</i></li>
+                <li class="is-today"><b data-i18n="d.th">Th</b><span data-i18n="s0.w4">HIIT · 25 min</span><i>●</i></li>
+                <li><b data-i18n="d.fr">Fr</b><span data-i18n="s0.w5">Upper body</span><i>○</i></li>
+                <li><b data-i18n="d.sa">Sa</b><span data-i18n="s0.w6">Long run · 10 km</span><i>○</i></li>
+                <li><b data-i18n="d.su">Su</b><span data-i18n="s0.w7">Yoga flow</span><i>○</i></li>
+              </ul>
+            </div>
+            <!-- Live workout -->
+            <div class="phone__screen story-screen screen-live" data-screen="1">
+              <p class="ui-hello" data-i18n="s1.round">Round 3 of 5</p>
+              <div class="timer"><svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52" /><circle pathLength="1" class="ring ring--timer" cx="60" cy="60" r="52" /></svg><strong>0:34</strong></div>
+              <h3 class="ui-h" data-i18n="s1.ex">Kettlebell swings</h3>
+              <div class="zones"><i></i><i></i><i class="on"></i><i></i><i></i></div>
+              <p class="ui-meta"><span data-i18n="s1.zone">Zone 3 · aerobic</span> · <span class="bpm">128</span> bpm</p>
+            </div>
+            <!-- Progress -->
+            <div class="phone__screen story-screen" data-screen="2">
+              <h3 class="ui-h" data-i18n="s2.h">Progress</h3>
+              <p class="ui-meta" data-i18n="s2.sub">Weekly active minutes</p>
+              <div class="bars"><i style="--h: 40%"></i><i style="--h: 55%"></i><i style="--h: 48%"></i><i style="--h: 66%"></i><i style="--h: 72%"></i><i style="--h: 64%"></i><i style="--h: 88%"></i><i style="--h: 95%"></i></div>
+              <div class="ui-card ui-card--accent"><strong>+38%</strong><span class="ui-meta" data-i18n="s2.note">more active than 2 months ago</span></div>
+            </div>
+            <!-- Community -->
+            <div class="phone__screen story-screen" data-screen="3">
+              <h3 class="ui-h" data-i18n="s3.h">Friends</h3>
+              <ol class="board">
+                <li><span class="av" style="--c: #ff4d1c">M</span><span data-i18n="s3.p1">Maria</span><b>4 820</b></li>
+                <li class="is-me"><span class="av" style="--c: #6d4aff">A</span><span data-i18n="s3.p2">You</span><b>4 310</b></li>
+                <li><span class="av" style="--c: #10b981">D</span><span data-i18n="s3.p3">Dima</span><b>3 975</b></li>
+                <li><span class="av" style="--c: #f59e0b">K</span><span data-i18n="s3.p4">Kate</span><b>3 102</b></li>
+              </ol>
+              <div class="ui-card"><span class="ui-tag" data-i18n="s3.ch">Challenge</span><strong data-i18n="s3.chName">October 100 km</strong><div class="mini-progress"><span style="width: 64%"></span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="story__steps">
+          <article class="step" data-step="0">
+            <span class="step__n">01</span>
+            <h2 class="h2" data-i18n="st0.t">A plan that fits your week</h2>
+            <p data-i18n="st0.p">Tell Pulse your goal and how many days you can train. It builds a balanced week — and reshuffles it when life gets in the way.</p>
+          </article>
+          <article class="step" data-step="1">
+            <span class="step__n">02</span>
+            <h2 class="h2" data-i18n="st1.t">Coaching in real time</h2>
+            <p data-i18n="st1.p">Voice cues, rest timers and live heart-rate zones keep every session at exactly the right intensity.</p>
+          </article>
+          <article class="step" data-step="2">
+            <span class="step__n">03</span>
+            <h2 class="h2" data-i18n="st2.t">Progress you can see</h2>
+            <p data-i18n="st2.p">Clear charts for strength, endurance and consistency. Small wins, celebrated every week.</p>
+          </article>
+          <article class="step" data-step="3">
+            <span class="step__n">04</span>
+            <h2 class="h2" data-i18n="st3.t">Better together</h2>
+            <p data-i18n="st3.p">Challenges and leaderboards with friends turn motivation into a habit.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Plan generator -->
+      <section class="plan" id="plan">
+        <div class="section-head">
+          <p class="kicker"><span class="kicker__dot"></span><span data-i18n="plan.kicker">Try it now</span></p>
+          <h2 class="h2" data-i18n="plan.title">Build your first week</h2>
+        </div>
+        <div class="plan__grid">
+          <form class="planner" onsubmit="return false">
+            <fieldset>
+              <legend data-i18n="plan.goal">Your goal</legend>
+              <div class="chips" role="radiogroup">
+                <label class="chip"><input type="radio" name="goal" value="lose" checked /><span data-i18n="goal.lose">Lose weight</span></label>
+                <label class="chip"><input type="radio" name="goal" value="muscle" /><span data-i18n="goal.muscle">Build muscle</span></label>
+                <label class="chip"><input type="radio" name="goal" value="endurance" /><span data-i18n="goal.endurance">Endurance</span></label>
+                <label class="chip"><input type="radio" name="goal" value="flex" /><span data-i18n="goal.flex">Flexibility</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend data-i18n="plan.level">Level</legend>
+              <div class="seg">
+                <label><input type="radio" name="level" value="1" checked /><span data-i18n="lvl.1">Beginner</span></label>
+                <label><input type="radio" name="level" value="2" /><span data-i18n="lvl.2">Intermediate</span></label>
+                <label><input type="radio" name="level" value="3" /><span data-i18n="lvl.3">Advanced</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span data-i18n="plan.days">Training days</span>: <output id="days-out">4</output></legend>
+              <input type="range" name="days" min="2" max="6" value="4" data-i18n-attr="aria-label:plan.days" aria-label="Training days" />
+            </fieldset>
+            <div class="summary">
+              <div><small data-i18n="sum.time">Per week</small><strong id="sum-time">—</strong></div>
+              <div><small data-i18n="sum.kcal">Burn</small><strong id="sum-kcal">—</strong></div>
+              <div><small data-i18n="sum.focus">Focus</small><strong id="sum-focus">—</strong></div>
+            </div>
+          </form>
+          <ol class="week-plan" aria-live="polite"></ol>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <div class="section-head">
+          <p class="kicker"><span class="kicker__dot"></span><span data-i18n="feat.kicker">Everything inside</span></p>
+          <h2 class="h2" data-i18n="feat.title">One app, every workout</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature"><span class="feature__icon">⌚</span><h3 data-i18n="f1.t">Works with your watch</h3><p data-i18n="f1.p">Apple Watch, Garmin, Wear OS and heart-rate straps.</p></article>
+          <article class="feature"><span class="feature__icon">🎧</span><h3 data-i18n="f2.t">Audio coaching</h3><p data-i18n="f2.p">Keep your eyes up — cues play over your music.</p></article>
+          <article class="feature"><span class="feature__icon">🏠</span><h3 data-i18n="f3.t">Gym or home</h3><p data-i18n="f3.p">Plans adapt to the equipment you actually have.</p></article>
+          <article class="feature"><span class="feature__icon">🧠</span><h3 data-i18n="f4.t">Smart recovery</h3><p data-i18n="f4.p">Sleep and HRV decide when to push and when to rest.</p></article>
+          <article class="feature"><span class="feature__icon">🥗</span><h3 data-i18n="f5.t">Nutrition tips</h3><p data-i18n="f5.p">Simple targets instead of strict diets.</p></article>
+          <article class="feature"><span class="feature__icon">📴</span><h3 data-i18n="f6.t">Offline mode</h3><p data-i18n="f6.p">Download workouts for flights and basements.</p></article>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="numbers">
+        <div><strong data-count="2.1" data-decimals="1" data-suffix="M">0</strong><span data-i18n="n1">active athletes</span></div>
+        <div><strong data-count="46" data-suffix="M">0</strong><span data-i18n="n2">workouts completed</span></div>
+        <div><strong data-count="92" data-suffix="%">0</strong><span data-i18n="n3">stick with it after 3 months</span></div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="pricing" id="pricing">
+        <div class="section-head">
+          <p class="kicker"><span class="kicker__dot"></span><span data-i18n="price.kicker">Pricing</span></p>
+          <h2 class="h2" data-i18n="price.title">Start free. Upgrade when you're hooked.</h2>
+          <div class="billing seg">
+            <label><input type="radio" name="billing" value="m" checked /><span data-i18n="price.m">Monthly</span></label>
+            <label><input type="radio" name="billing" value="y" /><span data-i18n="price.y">Yearly −40%</span></label>
+          </div>
+        </div>
+        <div class="prices">
+          <article class="price">
+            <h3>Free</h3>
+            <p class="price__amount"><strong>0 ₽</strong></p>
+            <ul>
+              <li data-i18n="pf.1">3 workouts a week</li>
+              <li data-i18n="pf.2">Basic stats</li>
+              <li data-i18n="pf.3">Community challenges</li>
+            </ul>
+            <a href="#get" class="btn btn--line btn--block" data-i18n="cta.free">Start free</a>
+          </article>
+          <article class="price price--pro">
+            <span class="price__badge" data-i18n="price.best">Best value</span>
+            <h3>Premium</h3>
+            <p class="price__amount"><strong class="price__value" data-m="499" data-y="299">499 ₽</strong> <small data-i18n="price.per">/ month</small></p>
+            <p class="price__note" data-i18n="price.note">7 days free, cancel anytime</p>
+            <ul>
+              <li data-i18n="pp.1">Unlimited adaptive plans</li>
+              <li data-i18n="pp.2">Live heart-rate zones</li>
+              <li data-i18n="pp.3">Recovery insights</li>
+              <li data-i18n="pp.4">Offline workouts</li>
+            </ul>
+            <a href="#get" class="btn btn--accent btn--block" data-i18n="cta.trial">Try 7 days free</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="section-head"><h2 class="h2">FAQ</h2></div>
+        <details><summary data-i18n="q1">Do I need a smartwatch?</summary><p data-i18n="a1">No. A watch unlocks live heart-rate zones, but every plan works with just your phone.</p></details>
+        <details><summary data-i18n="q2">I'm a complete beginner. Is Pulse for me?</summary><p data-i18n="a2">Yes — beginner plans start with 20-minute sessions and build up gradually.</p></details>
+        <details><summary data-i18n="q3">Can I train at home without equipment?</summary><p data-i18n="a3">Absolutely. Choose "no equipment" and Pulse will only suggest bodyweight exercises.</p></details>
+        <details><summary data-i18n="q4">How do I cancel Premium?</summary><p data-i18n="a4">In two taps from your profile. You keep access until the end of the paid period.</p></details>
+      </section>
+
+      <section class="final">
+        <h2 class="final__title" data-i18n="final.t">Your first workout is 20 minutes away.</h2>
+        <a href="#get" class="btn btn--accent" data-i18n="cta.get">Get the app</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="logo">PULSE</span>
+      <span data-i18n="ft.concept">Concept app landing — portfolio project.</span>
+      <span>© 2026</span>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
