@@ -1,4 +1,20 @@
-# Pulse — лендинг фитнес-приложения
+<div align="center">
+
+# Pulse
+
+**Лендинг фитнес-приложения** · RU / EN
+
+<a href="https://cdduke.github.io/pulse-fitness/"><img src="https://img.shields.io/badge/▶_Живое_демо-открыть-2ea44f?style=for-the-badge" alt="Live demo"></a>
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white) ![Lenis](https://img.shields.io/badge/Lenis-111111?style=flat-square) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Responsive](https://img.shields.io/badge/Адаптив-телефон_·_планшет_·_ПК-0ea5e9?style=flat-square)
+
+<img src="docs/preview-desktop.png" alt="Pulse — десктоп" width="73%">&nbsp;<img src="docs/preview-mobile.png" alt="Pulse — телефон" width="22%">
+
+*🇬🇧 Fitness app landing — pure-CSS phone mockup with live UI, sticky scroll storytelling and an interactive training-plan generator.*
+
+</div>
+
+---
 
 Концепт промо-сайта мобильного фитнес-приложения: энергичная типографика, **макет телефона, собранный на CSS**
 с «живым» интерфейсом внутри, и сторителлинг, в котором экраны приложения меняются вместе с прокруткой текста.
@@ -34,3 +50,6 @@ npm run build    # tsc + сборка
 ---
 
 *Concept app landing built as a portfolio piece. Bilingual: Russian / English.*
+
+
+**Демо:** https://cdduke.github.io/pulse-fitness/
